@@ -1,0 +1,18 @@
+git config --global user.email Vitorortizoficial@gmail.com
+git config --global user.name Vitor-Ortiz
+
+dotnet new sln --name ViotaStore
+dotnet new mvc -o ViotaStore
+dotnet sln add ViotaStore\ViotaStore.csproj
+
+cd ViotaStore
+
+dotnet add package Microsoft.EntityFrameworkCore --version 9.0.1
+
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 9.0.1
+
+dotnet add package Microsoft.EntityFrameworkCore.Tools --version 9.0.1
+
+dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore --version 9.0.1
+
+dotnet add package MySql.EntityFrameworkCore --version 9.0.0
