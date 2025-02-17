@@ -16,3 +16,12 @@ dotnet add package Microsoft.EntityFrameworkCore.Tools --version 9.0.1
 dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore --version 9.0.1
 
 dotnet add package MySql.EntityFrameworkCore --version 9.0.0
+
+arquivo .csproj
+mudar de analbe pra disable
+
+em viewModel
+tirar o ?
+
+criar a camada de dados (Models)
+
