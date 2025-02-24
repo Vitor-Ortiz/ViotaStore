@@ -8,13 +8,9 @@ dotnet sln add ViotaStore\ViotaStore.csproj
 cd ViotaStore
 
 dotnet add package Microsoft.EntityFrameworkCore --version 9.0.1
-
 dotnet add package Microsoft.EntityFrameworkCore.Design --version 9.0.1
-
 dotnet add package Microsoft.EntityFrameworkCore.Tools --version 9.0.1
-
 dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore --version 9.0.1
-
 dotnet add package MySql.EntityFrameworkCore --version 9.0.0
 
 arquivo .csproj
@@ -24,4 +20,10 @@ em viewModel
 tirar o ?
 
 criar a camada de dados (Models)
+
+criar a classe de contexto na pasta 
+
+configurar a connectionString no appsettings.json
+
+adicionar os serviços de contexto e identity no program.csproj
 
