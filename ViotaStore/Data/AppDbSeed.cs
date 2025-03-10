@@ -22,7 +22,7 @@ public class AppDbSeed
         };
         builder.Entity<Categoria>().HasData(categorias);
 
-        List<Produto> produtos = new List<Produto>
+        List<Produto> produtos = new()
         {
             // Smartphones
             new Produto { Id = 1, CategoriaId = 1, Nome = "iPhone 14 Pro", Descricao = "Apple A16 Bionic, 128GB", ValorCusto = 4500.00m, ValorVenda = 6999.00m, QtdeEstoque = 10, Destaque = true },

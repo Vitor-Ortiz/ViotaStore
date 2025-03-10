@@ -17,20 +17,22 @@ public class Produto
 
     [Required(ErrorMessage = "Por favor deixe de ser filha da puta e digite essa porra , obrigado")]
     [StringLength(60, ErrorMessage = "O nome deve possuir no maximo 60 caracteres , filha da puta")]
-    public string nome { get; set; }
+    public string Nome { get; set; }
 
     [Display(Name = "Desciçao", Prompt = "Desciçao")]
     [StringLength(1000, ErrorMessage = "A Desciçao deve possuir no maximo 100caracteres , cuzao")]
-
     public string Descricao { get; set; }
+
     [Display(Name = "Quantidade em estoque")]
     [Range(0, int.MaxValue)]
     [StringLength(1000, ErrorMessage = "Por favor , informe a quantidade em estoque")]
-    public int QtEstoque { get; set; }
+    public int QtdeEstoque { get; set; }
+
     [Display(Name = "Valor de Custo")]
     [Range(0, double.MaxValue)]
     [Column(TypeName = "numeric(10,2)")]
     public decimal ValorCusto { get; set; }
+
     [Display(Name = "Valor de Custo")]
     [Range(0, double.MaxValue)]
     [Column(TypeName = "numeric(10,2)")]
