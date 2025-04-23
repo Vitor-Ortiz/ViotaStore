@@ -1,4 +1,4 @@
-@model ViotaStore.Models.Produto
+@model ViotaStore.ViewModels.LoginVM
 @{
     ViewData["Title"] = "Login";
     Layout = "~/Views/Shared/_LayoutAccount.cshtml";
@@ -19,7 +19,7 @@
                         <div class="form-floating mb-3">
                             <input class="form-control" asp-for="Email" />
                             <label asp-for="Email"></label>
-                            <span asp-asp-validation-for="Email" class="text-danger text-center-sm"></span>
+                            <span asp-validation-for="Email" class="text-danger text-center-sm"></span>
                         </div>
                         <div class="form-floating mb-3">
                             <input class="form-control" asp-for="Senha">
@@ -47,5 +47,18 @@
 </div>
 
 @section Scripts {
+    <partial name="_ValidationScriptsPartial.cshtml"></partial>
+    <script type="text/javascript">
+        let mensagemErro = '';
+        $(".validation-summary-errors ul li").each(function () {
+            mensagemErro += $(this).text() + '<br />';
+        });
+        if (mensagemErro != '')
+            swal.fire
+                'Acesso Negado',
+                mensagemErro,
+                'error'
+                );
+    </script>
     
 }
