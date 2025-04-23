@@ -27,3 +27,4 @@ configurar a connectionString no appsettings.json
 
 adicionar os serviços de contexto e identity no program.csproj
 
+PÁG 23
