@@ -27,4 +27,4 @@ configurar a connectionString no appsettings.json
 
 adicionar os serviços de contexto e identity no program.csproj
 
-PÁG 46
+PÁG 46dotnet asptnet-codegenerator controller -name CategoriasController --model Categoria --dataContext AppDbContext --layout "~/Views/Shared/_LayoutAdmin,cshtml" -outDir Controllers
